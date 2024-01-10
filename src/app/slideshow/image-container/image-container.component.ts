@@ -1,5 +1,5 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-image-container',
@@ -16,14 +16,15 @@ export class ImageContainerComponent implements OnInit, OnDestroy {
     "../assets/images/slider-final/LTP_3099_print.jpg",
     "../assets/images/slider-final/LTP_8894.jpg",
   ];
+
   currentImageIndex = 0;
   intervalId: any; 
 
   ngOnInit() {
-    console.log("ImageContainerComponent.ngOnInit()");
-    this.intervalId = setInterval(() => {
-      this.callMethod();
-    },3000);
+    // console.log("ImageContainerComponent.ngOnInit()");
+    // this.intervalId = setInterval(() => {
+    //   this.callMethod();
+    // },3000);
   }
 
   ngOnDestroy() {
