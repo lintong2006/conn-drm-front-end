@@ -1,0 +1,9 @@
+<div class="image-container">
+    <!-- <img src="../assets/images/slider-final/IMG_6646.jpg"> -->
+    <img 
+        *ngFor="let image of images; let  i = index" 
+        [src]="image" 
+        alt="image" 
+        [ngStyle]="{'display': i === currentImageIndex ? 'block' : 'none'}"
+    >
+</div>

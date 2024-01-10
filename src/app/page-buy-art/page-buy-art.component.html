@@ -1,0 +1,25 @@
+<div class="buy-art-container">
+    <div class="category-wrapper">
+        <nav class="sidebar">
+            <ul>
+                <li [class.selected]="'ALL CATEGORIES' === selectedCategory">
+                    <a class="category-link" (click)="getAllArtItems()">ALL CATEGORIES</a>
+                </li>
+                <li *ngFor="let c of categoryList" [class.selected]="c === selectedCategory">
+                    <a class="category-link" (click)="getArtItems(c)">{{c}}</a>
+                </li>
+            </ul>
+        </nav> 
+    </div>
+
+    <div class="art-list-wrapper">
+        <div class="cols-sm" *ngFor="let artDTO of artsDTO">
+            <app-art-card [art]="artDTO"></app-art-card>
+        </div>
+    </div>
+</div>
+
+
+
+
+

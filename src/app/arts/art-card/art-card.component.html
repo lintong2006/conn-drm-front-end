@@ -1,0 +1,12 @@
+<div class="card-container">
+    <div class="card" (click)="gotoCardDetail()">
+        <img class="art-item-image" src="{{ art.imageUrl }}" [alt]="art.title">
+        <section class="info-section">
+            <div class="title"><strong>{{ art.title }}</strong></div>
+            <div class="price">{{ art.unitPrice | currency:'USD':'symbol':'0.0-2' }}</div>
+            <div class="add-to-cart-button">
+                <a class="text-color" href="#" >Add to cart</a>
+            </div>
+        </section>
+    </div>
+</div>

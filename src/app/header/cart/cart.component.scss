@@ -1,0 +1,15 @@
+.cart {
+    display: flex;
+    align-items: flex-end;
+    margin:1rem;
+  }
+  
+.cart-icon, .cart-count {
+  margin-top: 8px;
+  margin-right: 1rem;
+}
+
+.clickable{
+    cursor: pointer;
+}
+  

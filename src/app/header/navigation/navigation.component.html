@@ -1,0 +1,17 @@
+<div class="nav-bar">
+  <div class="menu" [class.open]="isMobileMenu">
+      <button class="text-button" (click)="gotoDonateArt()">Donate Art</button>
+      <button class="text-button" (click)="gotoBuyArt()">Buy Art</button>
+      <button class="text-button" (click)="gotoJoinUs()">Join Us</button>
+  </div>
+
+  <div class="mobile-menu-toggle" (click)="toggleMobileMenu()">
+    <mat-icon>menu</mat-icon>
+    <div class="mob-nav" [class.open]="isMobileMenu">
+      <button class="nav-button" (click)="gotoDonateArt()">Donate Art</button>
+      <button class="nav-button" (click)="gotoBuyArt()">Buy Art</button>
+      <button class="nav-button" (click)="gotoJoinUs()">Join Us</button>
+    </div>
+  </div>
+
+</div>

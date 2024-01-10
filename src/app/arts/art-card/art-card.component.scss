@@ -1,0 +1,63 @@
+.card-container{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+
+.card {
+    text-align: center;
+    background-color: rgb(228,228,228);
+    justify-content: center;
+    cursor: pointer;
+}
+
+.art-item-image {
+    margin-top: 1rem;
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.info-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #313131;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.add-to-cart-button {
+    background-color: #3f3f3f;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 30%;
+    .text-color{
+        color:#fff;
+    }
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: #fff;
+        .text-color {
+            color: #313131;
+        }
+    }
+}
+

@@ -1,0 +1,38 @@
+.header-container{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    // background-color: #F4F6F7;
+}
+
+
+
+@media only screen and (max-width: 828px){
+    .hide-desktop-only{
+        display: none;
+    }
+}
+
+
+.company-logo{
+    background: none;
+    cursor: pointer;
+    color: rgba(200, 183, 38, 1);
+    height: auto;
+    font-size: 36px;
+    font-style: italic;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 120.00000476837158%;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.logo{
+    justify-self: flex-start;
+}
+
+.shopping-cart{
+    justify-self: flex-end;
+}

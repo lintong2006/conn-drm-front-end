@@ -1,0 +1,83 @@
+
+<div class="donate-art-container">
+    <div class="form-container">
+        <h1 class="title">Tell us about your art piece</h1>
+        <form class="artForm" novalidate [formGroup]="artForm">
+            <mat-form-field class="input-title full-width ">
+            <mat-label>Title</mat-label>
+            <input matInput  formControlName="title">
+            <span
+                *ngIf="!artForm.get('title')?.valid && artForm.get('title')?.touched"
+                class="help-block"> Please enter a valid title.</span>
+            </mat-form-field>
+
+            <mat-form-field class="input-author full-width">
+                <mat-label>Author</mat-label>
+                <input matInput formControlName="author">
+                <span
+                *ngIf="!artForm.get('author')?.valid && artForm.get('author')?.touched"
+                class="help-block"> Please enter a valid author.</span>
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Category</mat-label>
+                <mat-select [(value)]="category" formControlName="category">
+                    <mat-option value="painting">Painting</mat-option>
+                    <mat-option value="drawing">Drawing</mat-option>
+                    <mat-option value="digital">Digital</mat-option>
+                    <mat-option value="photography">Photography</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="input-description full-width">
+                <mat-label>Description</mat-label>
+                <textarea matInput formControlName="description"></textarea>
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Length (in inches)</mat-label>
+                <input matInput type="number" formControlName="length">
+                <span
+                  *ngIf="!artForm.get('length')?.valid && artForm.get('length')?.touched"
+                  class="help-block"> Please enter a valid length.</span>
+              </mat-form-field>
+
+            <mat-form-field class="full-width">
+            <mat-label>Width (in inches)</mat-label>
+            <input matInput type="number" formControlName="width">
+            <span
+                *ngIf="!artForm.get('width')?.valid && artForm.get('width')?.touched"
+                class="help-block"> Please enter a valid width.</span>
+            </mat-form-field>
+
+            <mat-form-field floatLabel="always" class="full-width">
+                <mat-label>Asking Price</mat-label>
+                <input matInput type="number" class="example-right-align" placeholder="0" formControlName="price">
+                <span matTextPrefix>$&nbsp;</span>
+                <span matTextSuffix>.00</span>
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Enter your email</mat-label>
+                <input matInput placeholder="pat@example.com" required formControlName="email">
+                @if (email.invalid) {
+                  <mat-error>{{getErrorMessage()}}</mat-error>
+                }
+                <span
+                *ngIf="!artForm.get('email')?.valid && artForm.get('email')?.touched"
+                class="help-block"> Please enter a valid email.</span>
+            </mat-form-field>
+
+            <div class="full-width">
+                <mat-label>Photo to upload</mat-label>
+            </div>
+
+            <div class="upload-container full-width">
+                <input class="choose-file" type="file" multiple (change)="onFileSelected($event)">
+                <button class="upload-button" mat-raise-button (click)="onUpload()">Upload</button>
+            </div>
+        
+            <button class="submit-button full-width" mat-raise-button (click)="onSubmit()">Submit</button>
+        </form>
+    </div>
+</div>
