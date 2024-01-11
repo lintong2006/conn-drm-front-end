@@ -16,13 +16,12 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class ArtItemService {
-  // backendUrl = 'http://127.0.0.1';
-  // private artsUrl = this.backendUrl + '/art/add-art-item/';
-  _url_get_all_art_items = 'http://127.0.0.1:8000/art/get-all-art-items';
-  _url_image = 'http://127.0.0.1:8000/art/add-image';
-  _url_art_item_image = 'http://127.0.0.1:8000/art/add-art-item-image';
-  baseUrl = 'http://127.0.0.1:8000/art';
-
+  // baseUrl = 'http://127.0.0.1:8000/art'; //run locally
+  baseUrl = 'https://conn-drm-backend-heroku-9d87207cd20e.herokuapp.com/';  // deployed to heroku
+  _url_get_all_art_items = this.baseUrl + '/get-all-art-items';
+  _url_image = this.baseUrl + '/add-image';
+  _url_art_item_image = this.baseUrl + '/add-art-item-image';
+  
   constructor(private http:HttpClient) { }
 
   postArtItemAndImage(data: FormData): Observable<any> {

@@ -15,7 +15,6 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PageDonateArtModule } from './page-donate-art/page-donate-art.module';
-import { ArtItemService } from './services/art-item.service';
 
 
 @NgModule({

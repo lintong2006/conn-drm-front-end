@@ -9,7 +9,7 @@ import { PageHomeComponent } from './page-home/page-home.component';
 import { PageDonateArtComponent } from './page-donate-art/page-donate-art.component';
 import { PageDonateArtModule } from './page-donate-art/page-donate-art.module';
 import { ArtItemService } from './services/art-item.service';
-// import { ArtItemFormModule } from './arts/art-item-form/art-item-form.module';
+
 
 @Component({
   selector: 'app-root',
@@ -25,8 +25,6 @@ import { ArtItemService } from './services/art-item.service';
     
     PageHomeComponent,
     PageDonateArtModule
-    // PageDonateArtComponent
-    // ArtItemFormModule
   ],
   providers: [ArtItemService],
   templateUrl: './app.component.html',
