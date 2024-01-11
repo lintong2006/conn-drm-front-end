@@ -17,7 +17,7 @@ const httpOptions = {
 })
 export class ArtItemService {
   // baseUrl = 'http://127.0.0.1:8000/art'; //run locally
-  baseUrl = 'https://conn-drm-backend-heroku-9d87207cd20e.herokuapp.com/';  // deployed to heroku
+  baseUrl = 'https://conn-drm-backend-heroku-9d87207cd20e.herokuapp.com';  // deployed to heroku
   _url_get_all_art_items = this.baseUrl + '/get-all-art-items';
   _url_image = this.baseUrl + '/add-image';
   _url_art_item_image = this.baseUrl + '/add-art-item-image';
