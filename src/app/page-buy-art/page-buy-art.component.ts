@@ -30,8 +30,8 @@ export class PageBuyArtComponent implements OnInit{
   ) { }
 
   ngOnInit() {
-    console.log("PageBuyArtComponent ngOnInit() called");
-    console.log(this.route.snapshot.paramMap.get('category_name'));
+    // console.log("PageBuyArtComponent ngOnInit() called");
+    // console.log(this.route.snapshot.paramMap.get('category_name'));
     this.route.paramMap.subscribe(() => {
       this.listArtItems();
     });
