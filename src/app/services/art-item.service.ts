@@ -16,8 +16,10 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class ArtItemService {
-  // baseUrl = 'http://127.0.0.1:8000/art'; //run locally
-  baseUrl = 'https://conn-drm-backend-heroku-9d87207cd20e.herokuapp.com';  // deployed to heroku
+  // baseUrl = 'http://127.0.0.1:8000'; //run locally
+  // baseUrl = 'https://conn-drm-backend-heroku-9d87207cd20e.herokuapp.com';  // deployed to heroku
+  // baseUrl = "https://conn-drm-back-end.onrender.com"; // deployed to render
+  baseUrl = 'http://3.81.104.30/art'; 
   _url_get_all_art_items = this.baseUrl + '/get-all-art-items';
   _url_image = this.baseUrl + '/add-image';
   _url_art_item_image = this.baseUrl + '/add-art-item-image';

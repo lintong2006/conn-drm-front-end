@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/",
+    "/cart",
+    "/category",
+    "/donate-art",
+    "/join-us"
+  ]
+}

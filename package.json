@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "postinstall": "ng build --configuration production"
+    "postinstall": "ng build --configuration production",
+    "deploy:gh": "ng build --configuration production --base-href 'https://lintong2006.github.io/conn-drm-front-end/' && ngh --no-silent"
   },
   "private": true,
   "dependencies": {
