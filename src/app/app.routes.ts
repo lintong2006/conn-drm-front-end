@@ -7,7 +7,7 @@ import { PageCartComponent } from './page-cart/page-cart.component';
 import { ArtDetailComponent } from './arts/art-detail/art-detail.component';
 
 export const routes: Routes = [
-    { path: '', component: PageHomeComponent, pathMatch: 'full' },
+    { path: '', component: PageHomeComponent},
     // { path: '', redirectTo: '/category', pathMatch: 'full' },
     { path: 'donate-art', component: PageDonateArtComponent },
     { path: 'category/:category_name', component: PageBuyArtComponent},
