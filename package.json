@@ -1,6 +1,9 @@
 {
   "name": "connect-dreams",
   "version": "0.0.0",
+  "engine":{
+    "node":">=18 <21"
+  },
   "scripts": {
     "ng": "ng",
     "start": "node server.ts",
