@@ -1,6 +1,7 @@
 {
   "name": "connect-dreams",
   "version": "0.0.0",
+  "type": "module",
   "engine":{
     "node":">=18 <21"
   },
